@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Practice</title>
+    <style>
+        body {
+            margin: 0
+        }
+        div {
+            display: flex;
+            margin: 0.5rem;
+            padding: 1rem;
+            border: 3px solid black;
+            min-height: 1rem;
+            flex-grow: 1
+        }
+        .grandparent {
+            background-color: rgb(249, 101, 101);
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
+            /* flex-direction: column; */
+        }
+        .parent {
+            background-color: rgb(71, 169, 71);
+        }
+        .child {
+            background-color: rgb(139, 139, 255);
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+</body>
+</html>
